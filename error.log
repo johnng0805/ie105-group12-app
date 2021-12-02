@@ -1,0 +1,12 @@
+[Thu Dec 02 14:45:30.116532 2021] [ssl:warn] [pid 64424:tid 64424] AH01909: secure.ie105-group12-app.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Dec 02 14:45:30.129509 2021] [ssl:warn] [pid 64424:tid 64424] AH01909: secure.ie105-group12-app.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Dec 02 14:46:22.646415 2021] [ssl:warn] [pid 64775:tid 64775] AH01909: secure.ie105-group12-app.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Dec 02 14:46:22.656952 2021] [ssl:warn] [pid 64775:tid 64775] AH01909: secure.ie105-group12-app.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Dec 02 14:49:43.898407 2021] [ssl:warn] [pid 65452:tid 65452] AH01909: secure.ie105-group12-app.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Dec 02 14:49:43.909454 2021] [ssl:warn] [pid 65452:tid 65452] AH01909: secure.ie105-group12-app.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Dec 02 14:50:42.760249 2021] [ssl:warn] [pid 65861:tid 65861] AH01909: secure.ie105-group12-app.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Dec 02 14:50:42.770835 2021] [ssl:warn] [pid 65861:tid 65861] AH01909: secure.ie105-group12-app.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Dec 02 14:53:22.764630 2021] [ssl:warn] [pid 66596:tid 66596] AH01909: secure.ie105-group12-app.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Dec 02 14:53:22.775398 2021] [ssl:warn] [pid 66596:tid 66596] AH01909: secure.ie105-group12-app.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Dec 02 14:57:13.209110 2021] [ssl:warn] [pid 67291:tid 67291] AH01909: secure.ie105-group12-app.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Dec 02 14:57:13.224795 2021] [ssl:warn] [pid 67291:tid 67291] AH01909: secure.ie105-group12-app.com:443:0 server certificate does NOT include an ID which matches the server name
