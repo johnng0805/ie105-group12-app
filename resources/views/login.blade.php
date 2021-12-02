@@ -41,7 +41,7 @@
         </div>
         <div class="line__small mt-4"></div>
         <div class="alert mt-4" role="alert"></div>
-        <a href="/register" class="mt-3">Register an account</a>
+        <a href="/auth/register" class="mt-3">Register an account</a>
         <button type="submit" class="loginBtn mt-3">Login</button>
     </div>
     <script>
@@ -63,6 +63,7 @@
                     processData: false,
                     statusCode: {
                         401: function (response) {
+                            $(".alert").removeClass("alert-show");
                             var res = response.responseJSON;
                             $(".alert").addClass("alert-show");
                             $(".alert").html(res.error);

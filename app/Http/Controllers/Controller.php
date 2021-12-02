@@ -22,4 +22,8 @@ class Controller extends BaseController
         "password" => "required|regex:/^(?=.*[A-Z]{1,})(?=.*[!@#$&*_]{1,})(?=.*[0-9]{1,})(?=.*[a-z]{1,}).{8,100}$/|confirmed",
         "password_confirmation" => "required|regex:/^(?=.*[A-Z]{1,})(?=.*[!@#$&*_]{1,})(?=.*[0-9]{1,})(?=.*[a-z]{1,}).{8,100}$/"
     ];
+
+    protected $ruleParameters = [
+        "id" => "required|exists:users,id|"
+    ];
 }

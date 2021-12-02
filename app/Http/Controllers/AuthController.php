@@ -24,11 +24,6 @@ class AuthController extends Controller
         return response()->json(["error" => "Email or password is incorrect"], 401);
     }
 
-    public function show()
-    {
-        return view("login");
-    }
-
     public function register(Request $request)
     {
         $validator = Validator::make($request->all(), $this->ruleRegister);
@@ -42,7 +37,11 @@ class AuthController extends Controller
         $user->email = $request->email;
         $user->password = password_hash($request->password, PASSWORD_BCRYPT);
 
-        $user->save();
+        try {
+            $user->save();
+        } catch (\Exception $e) {
+            return response()->json($e->getMessage(), 500);
+        }
 
         return response()->json(["status" => "success"], 200);
     }

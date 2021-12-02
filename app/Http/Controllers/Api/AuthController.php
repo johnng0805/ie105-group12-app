@@ -44,12 +44,4 @@ class AuthController extends Controller
 
         return response()->json(["status" => "success"], 200);
     }
-
-    public function logout(Request $request)
-    {
-        if (Auth::check()) {
-            $request->user()->token()->revoke();
-            return response()->json(["status" => "Logout success"], 200);
-        }
-    }
 }
