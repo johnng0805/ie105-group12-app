@@ -16,15 +16,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(["prefix" => "auth"], function () {
-    Route::post("register", [AuthController::class, "register"]);
-    Route::post("login", [AuthController::class, "login"]);
-});
+// Route::group(["prefix" => "auth"], function () {
+//     Route::post("register", [AuthController::class, "register"]);
+//     Route::post("login", [AuthController::class, "login"]);
+// });
 
-Route::group([
-    "prefix" => "user",
-    "middleware" => "auth:api"
-], function () {
-    Route::get("logout", [UserController::class, "logout"]);
-    Route::get("/", [UserController::class, "getSelf"]);
-});
+// Route::group([
+//     "prefix" => "user",
+//     "middleware" => "auth:api"
+// ], function () {
+//     Route::get("logout", [UserController::class, "logout"]);
+//     Route::get("/", [UserController::class, "getSelf"]);
+// });
