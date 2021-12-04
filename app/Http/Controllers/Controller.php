@@ -26,4 +26,18 @@ class Controller extends BaseController
     protected $ruleParameters = [
         "id" => "required|exists:users,id|"
     ];
+
+    // protected $rulePost = [
+    //     "title" => "required|regex:/^[a-zA-Z0-9 ]*$/",
+    //     "content" => "required|regex:/^[A-Za-z0-9][^\.:]*[\.:]$/"
+    // ];
+
+    protected $rulePost = [
+        "title" => "required",
+        "content" => "required"
+    ];
+
+    protected $ruleNumeric = [
+        "id" => "required|numeric"
+    ];
 }

@@ -1,0 +1,208 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/nord_mountains.png");
+    background-size: cover;
+    background-position: center center;
+    padding: 4em;
+}
+
+.home * {
+    margin: 0;
+    padding: 0;
+}
+
+.home__container {
+    width: 100%;
+    height: 100%;
+    background-color: #2E3440;
+    border-radius: 6px;
+    box-shadow: 2px 4px 8px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.left__box {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em;
+}
+
+.left__box h1 {
+    color: #8FBCBB;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.form__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.form__container form {
+    width: 100%;
+    height: 70%;
+}
+
+.form__container input, .form__container textarea {
+    background-color: #434C5E;
+    border-color: #2E3440;
+    resize: none;
+}
+
+.form__container label {
+    color: #8FBCBB;
+}
+
+.form__container input:focus, .form__container textarea:focus {
+    background-color: #4C566A;
+    color: #ECEFF4;
+}
+
+.postBtn {
+    width: 30%;
+    padding: 0.6em;
+    border-radius: 4px;
+    border: none;
+    background-color: #88C0D0;
+    font-size: large;
+    font-weight: bold;
+}
+
+.logoutBtn {
+    position: fixed;
+    bottom: 2.5em;
+    margin: auto;
+    padding: 0.6em 1.5em;
+    border-radius: 4px;
+    background-color: #EBCB8B;
+    color: #BF616A;
+    font-weight: bold;
+    border: none;
+}
+
+.line__big {
+    border: 2px solid #D08770;
+    height: 80%;
+}
+
+.right__box {
+    width: 100%;
+    height: 90%;
+    padding: 1em 3em 3em 3em;
+    overflow: hidden;
+}
+
+.post__container {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    background-color: #3B4252;
+    overflow: auto;
+}
+
+.post__item {
+    width: 100%;
+    max-height: 50%;
+}
+
+.post__content {
+    width: 100%;
+    height: 30%;
+    background-color: #81A1C1;
+    padding: 1.5em;
+}
+
+.post__item * {
+    color: #2E3440;
+}
+
+.post__item p {
+    text-align: justify;
+}
+
+.post__comment {
+    padding: 1.5em;
+    background-color: #4C566A;
+    display: flex;
+    align-items: center;
+}
+
+.post__comment form {
+    width: 100%;
+}
+
+.post__comment textarea {
+    height: auto;
+    resize: none;
+    background-color: #3B4252;
+    color: #D8DEE9;
+    border: none;
+}
+
+.post__comment label {
+    color: #88C0D0;
+}
+
+.post__comment textarea:focus {
+    color: #D8DEE9;
+    background-color: #434C5E;
+}
+
+.post__comment button {
+    padding: 0.9em 2em; 
+    height: 100%;
+    border: none;
+    background-color: #8FBCBB;
+    border-radius: 4px;
+    margin-left: 1.5em;
+}
+
+.post__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.post__header i {
+    cursor: pointer;
+}
+
+.post__header h4 {
+    font-weight: bold;
+}
+
+.post__action .fa-paper-plane {
+    display: none;
+}
+
+[contenteditable] {
+    outline: 0px solid transparent;
+}
+
+.post__search input {
+    padding: 1em;
+    background-color: #3B4252;
+}
+
+.post__search button {
+    padding-inline: 1.5em;
+    background-color: #A3BE8C;
+    color: #2E3440;
+    font-weight: bold;
+}

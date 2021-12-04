@@ -16,7 +16,7 @@ class UserController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect("/");
+        return response()->json(["message" => "Logout successfully"], 200);
     }
 
     public function getSelf(Request $request)

@@ -52,7 +52,6 @@
                     "password": $("#floatingPassword").val(),
                     "_token": "{{ csrf_token() }}"
                 };
-                console.log(loginData);
                 $.ajax({
                     url: "/auth/login",
                     data: JSON.stringify(loginData),
