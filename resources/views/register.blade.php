@@ -68,13 +68,17 @@
         </div>
         <script>
             $(function() {
+                $.ajaxSetup({
+                    beforeSend: function(xhr) {
+                        xhr.setRequestHeader('X-CSRF-TOKEN', "{{csrf_token()}}");
+                    }
+                });
                 $(".loginBtn").on("click", function () {
                     var loginData = {
                         "name": $("#floatingName").val(),
                         "email": $("#floatingEmail").val(),
                         "password": $("#floatingPassword").val(),
                         "password_confirmation": $("#floatingRePassword").val(),
-                        "_token": "{{ csrf_token() }}"
                     };
                     $.ajax({
                         url: "/auth/register",

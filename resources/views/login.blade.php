@@ -46,11 +46,15 @@
     </div>
     <script>
         $(function() {
+            $.ajaxSetup({
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader('X-CSRF-TOKEN', "{{csrf_token()}}");
+                }
+            });
             $(".loginBtn").on("click", function () {
                 var loginData = {
                     "email": $("#floatingEmail").val(),
                     "password": $("#floatingPassword").val(),
-                    "_token": "{{ csrf_token() }}"
                 };
                 $.ajax({
                     url: "/auth/login",
