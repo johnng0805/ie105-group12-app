@@ -30,14 +30,14 @@
                     <div class="row g-2">
                         <div class="col-md me-3">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingName" placeholder="Your name" name="name" required>
+                                <input type="text" class="form-control formName" id="floatingName" placeholder="Your name" name="name" required>
                                 <label for="floatingName">Name</label>
                                 <div class="alert alertName mt-3"></div>
                             </div>
                         </div>
                         <div class="col-md">
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" name="email" required>
+                                <input type="email" class="form-control formEmail" id="floatingEmail" placeholder="name@example.com" name="email" required>
                                 <label for="floatingEmail">Email address</label>
                                 <div class="alert alertEmail mt-3"></div>
                             </div>
@@ -46,14 +46,14 @@
                     <div class="row g-2">
                         <div class="col-md me-3">
                             <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" required>
+                                <input type="password" class="form-control formPassword" id="floatingPassword" placeholder="Password" name="password" required>
                                 <label for="floatingPassword">Password</label>
                                 <div class="alert alertPassword mt-3"></div>
                             </div>
                         </div>
                         <div class="col-md">
                             <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="floatingRePassword" placeholder="Password confirmation" name="password_confirmation" required>
+                                <input type="password" class="form-control formRePassword" id="floatingRePassword" placeholder="Password confirmation" name="password_confirmation" required>
                                 <label for="floatingRePassword">Password confirmation</label>
                                 <div class="alert alertRePassword mt-3"></div>
                             </div>
@@ -91,21 +91,26 @@
                         statusCode: {
                             400: function (response) {
                                 $(".alert").removeClass("alert-show");
+                                $(".form-control").removeClass("is-invalid");
                                 var res = response.responseJSON.error;
                                 if (res.name) {
                                     $(".alertName").addClass("alert-show");
+                                    $(".formName").addClass("is-invalid");
                                     $(".alertName").html(res.name);
                                 }
                                 if (res.email) {
                                     $(".alertEmail").addClass("alert-show");
+                                    $(".formEmail").addClass("is-invalid");
                                     $(".alertEmail").html(res.email);
                                 }
                                 if (res.password) {
                                     $(".alertPassword").addClass("alert-show");
+                                    $(".formPassword").addClass("is-invalid");
                                     $(".alertPassword").html(res.password);
                                 }
                                 if (res.password_confirmation) {
                                     $(".alertRePassword").addClass("alert-show");
+                                    $(".formRePassword").addClass("is-invalid");
                                     $(".alertRePassword").html(res.password_confirmation);
                                 }
                             },

@@ -69,6 +69,7 @@
                             $(".alert").removeClass("alert-show");
                             var res = response.responseJSON;
                             $(".alert").addClass("alert-show");
+                            $(".form-control").addClass("is-invalid");
                             $(".alert").html(res.error);
                         },
                         200: function (data) {
