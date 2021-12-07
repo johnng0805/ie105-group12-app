@@ -39,5 +39,7 @@ class AuthServiceProvider extends ServiceProvider
         Passport::setDefaultScope([
             "user"
         ]);
+
+        Passport::hashClientSecrets();
     }
 }
